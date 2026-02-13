@@ -11,7 +11,9 @@
 
 <script>
 function speak(){
-  let msg = new SpeechSynthesisUtterance("Menj a huszonhetes sor harmincegyes pozíciójához");
+let msg = new SpeechSynthesisUtterance("Menj a huszonhetes sor harmincegyes pozíciójához");
+msg.lang = "hu-HU";
+
   speechSynthesis.speak(msg);
 }
 </script>
